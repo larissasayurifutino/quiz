@@ -3,35 +3,59 @@ html,
 body {
     font-family: 'Fredoka';
     font-size: 12px;
-    background-color: blue;
-
+    background-color: lightgray;
     margin: 0 auto;
 }
 
-.area-grafico {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.cabecalho{
+    margin-left: 10%;
+    margin-right: 10%;
+    background: white;
+    /*box-shadow: 2px 2px 20px #d1d1d1;*/
+    border-radius: 15px;
 }
 
-.area-grafico > div{
-    width: 200px;
-    border: 1px solid hotpink;
-    height: 400px;
-    justify-content: center;
+.article-title-detail,
+.article-author{
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+h2.subtitle{
+    font-size: 1.3rem;
+    margin: 1rem 2rem;
 }
 
 .corpo-texto {
-
     max-width: 620px;
     margin: 1em auto;
     font-size: 2rem;
-
 }
+
+.pergunta {
+    background: lightyellow;
+    max-width: 600px;
+    margin: 1em auto;
+    font-size: 2rem;
+}
+
+.pergunta > img,
+.pergunta > .answer > img.resposta
+{
+    max-width: 580px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between
+}
+
 .answer{
     display: none;
 }
+
 img.resposta{
     display: none;
 }
